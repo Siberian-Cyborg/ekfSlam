@@ -13,11 +13,13 @@ The robot has four MECANUM wheels allowing for sideways movement and pinned rota
 
 To understand the theoretical background you can go thru this lecture: http://ais.informatik.uni-freiburg.de/teaching/ws12/mapping/pdf/slam04-ekf-slam.pdf
 
-here a video of the robot:
-TODO add video
+here a video of the robot and the resulting map:
 
-here a screencast of the mapping:
-TODO add screencast
+
+
+https://user-images.githubusercontent.com/96864967/153363264-61cf988f-053a-4cd9-8bab-20216b9a96d0.mp4
+
+
 
 # SLAM
 SLAM stands for *S*imultaneous *L*ocalization *A*nd *M*apping. Its the process of driving around in an unknow enviroment while creating a map of your surrounding and localizing yourself relative to some landmarks in that enviroment. It is a crucial part of any autnomous robot that needs to navigate in an unknown or dynamically changing enviroment. The map created with SLAM can be used to plan optimal, collision free trjectories thru the space. There are plenty of different methods for solving the SLAM problem. The EKF SLAM is the oldest one. It is still widely used, especially for prototyping and testing. Other SLAM methods are: Particle-based methods like the FAST SLAM (1 & 2) by Montemerlo and Thrun (http://robots.stanford.edu/papers/montemerlo.fastslam-tr.pdf) or GRAPH SLAM which is state of the art. There are many different Graph-based SLAM approaches depending on the sensors used for observing the enviroment (RGBD, Stereo camers, Monocular vision, LIDAR). In general camera-based GRAPH SLAMs can be split into two groups, namely direct and indirect approaches. The former takes the raw camera data to perform the data association and SLAM whereas the latter first extracts features from the images like corners and then only uses thoses to perform the SLAM. If you want to dig deeper here is a excellent lecture series on SLAM: https://www.youtube.com/watch?v=U6vr3iNrwRA&list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_ as well as https://www.youtube.com/watch?v=mQvKhmWagB4&list=PLgnQpQtFTOGQh_J16IMwDlji18SWQ2PZ6
